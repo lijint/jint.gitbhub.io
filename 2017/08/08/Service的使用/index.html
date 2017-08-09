@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。   Service的基本用法关于Service最基本的用法自然就是如何启动一个Service了，启动Service的方法和启动Activity很类似，都需要借助Intent来实现，下面我们就通过一个">
+<meta name="description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。">
 <meta name="keywords" content="Andiord">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Service的使用">
 <meta property="og:url" content="http://yoursite.com/2017/08/08/Service的使用/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。   Service的基本用法关于Service最基本的用法自然就是如何启动一个Service了，启动Service的方法和启动Activity很类似，都需要借助Intent来实现，下面我们就通过一个">
+<meta property="og:description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-08T09:27:56.682Z">
+<meta property="og:updated_time" content="2017-08-08T09:30:45.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Service的使用">
-<meta name="twitter:description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。   Service的基本用法关于Service最基本的用法自然就是如何启动一个Service了，启动Service的方法和启动Activity很类似，都需要借助Intent来实现，下面我们就通过一个">
+<meta name="twitter:description" content="Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。">
 
 
 
@@ -332,10 +332,10 @@
 
       
         <blockquote>
-<p>Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。</p>
-</blockquote>
+<p>Service是Android的四大组件之一，它主要用于在后台处理一些耗时的逻辑，或者去执行某些需要长期运行的任务。必要的时候我们甚至可以在程序退出的情况下，让Service在后台继续保持运行状态。<br><a id="more"></a></p>
 <hr>
-<h2 id="Service的基本用法"><a href="#Service的基本用法" class="headerlink" title="Service的基本用法"></a>Service的基本用法</h2><p>关于Service最基本的用法自然就是如何启动一个Service了，启动Service的方法和启动Activity很类似，都需要借助Intent来实现，下面我们就通过一个具体的例子来看一下。<br>新建一个Android项目，项目名就叫ServiceTest，这里我选择使用4.0的API。</p>
+<h2 id="Service的基本用法"><a href="#Service的基本用法" class="headerlink" title="Service的基本用法"></a>Service的基本用法</h2></blockquote>
+<p>关于Service最基本的用法自然就是如何启动一个Service了，启动Service的方法和启动Activity很类似，都需要借助Intent来实现，下面我们就通过一个具体的例子来看一下。<br>新建一个Android项目，项目名就叫ServiceTest，这里我选择使用4.0的API。</p>
 <p>然后新建一个MyService继承自Service，并重写父类的onCreate()、onStartCommand()和onDestroy()方法，如下所示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">public class MyService extends Service &#123;</div><div class="line">    public static final String TAG = &quot;MyService&quot;;  </div><div class="line">    @Override  </div><div class="line">    public void onCreate() &#123;  </div><div class="line">        super.onCreate();  </div><div class="line">        Log.d(TAG, &quot;onCreate() executed&quot;);  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">    @Override  </div><div class="line">    public int onStartCommand(Intent intent, int flags, int startId) &#123;  </div><div class="line">        Log.d(TAG, &quot;onStartCommand() executed&quot;);  </div><div class="line">        return super.onStartCommand(intent, flags, startId);  </div><div class="line">    &#125;  </div><div class="line">      </div><div class="line">    @Override  </div><div class="line">    public void onDestroy() &#123;  </div><div class="line">        super.onDestroy();  </div><div class="line">        Log.d(TAG, &quot;onDestroy() executed&quot;);  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">    @Override  </div><div class="line">    public IBinder onBind(Intent intent) &#123;  </div><div class="line">        return null;  </div><div class="line">    &#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>然后，只要在MainActivity中实现这个类，用Intent的方法启动和停止服务就可以了。其中MainActivity的函数如下：</p>
