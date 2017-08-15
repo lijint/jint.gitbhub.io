@@ -95,7 +95,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="Method," />
 
 
 
@@ -111,18 +111,18 @@
 
 
 
-<meta name="description" content="vue框架是用于前端开发的一个非常好用框架，配合公司自己搭建的metis能够很方便的编写前端代码。">
-<meta name="keywords" content="Vue">
+<meta name="description" content="在最近项目中，主程序会因各种问题退出，为了防止这一现象出现，特地研究守护进程的实现，来守护主程序，守护进程的实现思路主要有两种：">
+<meta name="keywords" content="Method">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue学习以及metis的使用">
-<meta property="og:url" content="http://yoursite.com/2017/08/01/vue学习以及metis的使用/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="vue框架是用于前端开发的一个非常好用框架，配合公司自己搭建的metis能够很方便的编写前端代码。">
+<meta property="og:title" content="守护进程算法">
+<meta property="og:url" content="http://yoursite.com/守护进程算法/index.html">
+<meta property="og:site_name" content="Jint">
+<meta property="og:description" content="在最近项目中，主程序会因各种问题退出，为了防止这一现象出现，特地研究守护进程的实现，来守护主程序，守护进程的实现思路主要有两种：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-09T07:27:58.644Z">
+<meta property="og:updated_time" content="2017-08-09T06:00:42.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue学习以及metis的使用">
-<meta name="twitter:description" content="vue框架是用于前端开发的一个非常好用框架，配合公司自己搭建的metis能够很方便的编写前端代码。">
+<meta name="twitter:title" content="守护进程算法">
+<meta name="twitter:description" content="在最近项目中，主程序会因各种问题退出，为了防止这一现象出现，特地研究守护进程的实现，来守护主程序，守护进程的实现思路主要有两种：">
 
 
 
@@ -150,13 +150,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/01/vue学习以及metis的使用/"/>
+  <link rel="canonical" href="http://yoursite.com/守护进程算法/"/>
 
 
 
 
 
-  <title>vue学习以及metis的使用 | Hexo</title>
+  <title>守护进程算法 | Jint</title>
   
 
 
@@ -186,14 +186,12 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
-        <span class="logo-line-after"><i></i></span>
+        <span class="site-title">Jint</span>
       </a>
     </div>
       
@@ -285,7 +283,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/01/vue学习以及metis的使用/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/守护进程算法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jint">
@@ -294,7 +292,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Jint">
     </span>
 
     
@@ -302,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vue学习以及metis的使用</h1>
+          <h1 class="post-title" itemprop="name headline">守护进程算法</h1>
         
 
         <div class="post-meta">
@@ -314,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-01T16:31:17+08:00">
-                2017-08-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T13:56:04+08:00">
+                2017-08-09
               </time>
             
 
@@ -350,21 +348,13 @@
 
       
         <blockquote>
-<p>vue框架是用于前端开发的一个非常好用框架，配合公司自己搭建的metis能够很方便的编写前端代码。<br><a id="more"></a></p>
+<p>在最近项目中，主程序会因各种问题退出，为了防止这一现象出现，特地研究守护进程的实现，来守护主程序，守护进程的实现思路主要有两种：<br><a id="more"></a></p>
 </blockquote>
-<h1 id="Vue学习"><a href="#Vue学习" class="headerlink" title="Vue学习"></a>Vue学习</h1><blockquote>
-<p>在学习前需要事先安装git和node.js，具体方法这里不赘述，可自行百度，非常简单。学习过程在VSCode上编写的，安装最新版本即可。</p>
-</blockquote>
-<h2 id="使用命令行创建项目"><a href="#使用命令行创建项目" class="headerlink" title="使用命令行创建项目"></a>使用命令行创建项目</h2><p>打开VSCode中的命令行或者node.js或者git bash，依次输入如下命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> 全局安装 vue-cli</div><div class="line"><span class="meta">$</span> npm install --global vue-cli</div><div class="line"><span class="meta">#</span> 创建一个基于 webpack 模板的新项目</div><div class="line"><span class="meta">$</span> vue init webpack my-project</div><div class="line"><span class="meta">#</span> 安装依赖，走你</div><div class="line"><span class="meta">$</span> cd my-project</div><div class="line"><span class="meta">$</span> npm install</div><div class="line"><span class="meta">$</span> npm run dev</div></pre></td></tr></table></figure>
-<p>这样一个程序员最喜欢的helloworld项目就大功告成了，vue的知识点可以在<a href="https://cn.vuejs.org/" target="_blank" rel="external">vue.js官网</a>或者<a href="http://www.runoob.com/vue2/vue-tutorial.html" target="_blank" rel="external">菜鸟教程</a>里学习。</p>
-<h1 id="Metis的使用"><a href="#Metis的使用" class="headerlink" title="Metis的使用"></a>Metis的使用</h1><blockquote>
-<p>Metis是公司基于智能pos专门开发的vue框架，通过调用组件实现高效率的前端界面实现。</p>
-</blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>这里先介绍在vue框架中加入metis，首先，安装最新稳定版的组件，使用npm安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install "git+http://git.landicorp.com/metis/metis-npm.git" --save-dev</div></pre></td></tr></table></figure>
-<p>随后，引入配置，工程中打开webpack.conf.js文件，按按需加载配置的方式加入以下代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> merge = <span class="built_in">require</span>(<span class="string">'webpack-merge'</span>)</div><div class="line"><span class="keyword">var</span> metisWebpackConfig = <span class="built_in">require</span>(<span class="string">'metis/webpack.metis.conf.js'</span>)  <span class="comment">// 引入 Metis 配置</span></div><div class="line"></div><div class="line"><span class="comment">// 合并项目配置跟 Metis 配置</span></div><div class="line">merge(metisWebpackConfig(utils), &#123;  <span class="comment">//  这里可传入 utils，utils 主要实现方法 assetsPath，也可以不传入</span></div><div class="line">    <span class="comment">//  项目其他webpack配置</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>1.守护进程对注册表中特定项值做递减，当值为0时系统重启，主程序中启动守护，并对注册标表中的特定项值赋初值切做递加，当主程序运行过程中，守护进程不会讲项值减到0，达到守护主进程的效果。</p>
+<p>2.守护进程查找进程列表中是否有主进程，若没有则重启操作系统。</p>
+<p>目前设置了主程序的开机自启动，所以重启操作系统就可以了。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">RegistryEudemon</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> RegistryHelper regHelper;</div><div class="line">     <span class="keyword">private</span> <span class="keyword">string</span> baseSubKey = <span class="string">@"SOFTWARE\\"</span>;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RegistryEudemon</span>(<span class="params"></span>)</span></div><div class="line">    &#123;</div><div class="line">        regHelper = <span class="keyword">new</span> RegistryHelper(baseSubKey, RegDomain.LocalMachine);</div><div class="line">        <span class="comment">//生成Eudemon项</span></div><div class="line">        <span class="keyword">string</span> subKey = regHelper.PathAdd(baseSubKey, <span class="string">@"\Eudemon"</span>);</div><div class="line">        <span class="keyword">if</span> (!regHelper.IsSubKeyExist(subKey))</div><div class="line">        &#123;</div><div class="line">            regHelper.CreateSubKey(subKey);</div><div class="line">        &#125;</div><div class="line">        regHelper.SubKey = subKey;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">UpdateCount</span>(<span class="params"><span class="keyword">int</span> <span class="keyword">value</span></span>)</span></div><div class="line">    &#123;</div><div class="line">        regHelper.WriteRegeditKey(regHelper.PathAdd(baseSubKey, <span class="string">@"\Eudemon"</span>), <span class="string">"count"</span>, <span class="keyword">value</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">SubtractCount</span>(<span class="params"></span>)</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">int</span> cnt = <span class="keyword">int</span>.Parse(regHelper.ReadRegeditKey(<span class="string">"count"</span>, regHelper.PathAdd(baseSubKey, <span class="string">@"\Eudemon"</span>)).ToString());</div><div class="line">        cnt--;</div><div class="line">        UpdateCount(cnt);</div><div class="line">        <span class="keyword">return</span> cnt;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">FrmMain</span> : <span class="title">Form</span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">tmrBeat_Elapsed</span>(<span class="params"><span class="keyword">object</span> sender, ElapsedEventArgs e</span>)</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span> (regEudemon.SubtractCount() &lt;= <span class="number">0</span>)</div><div class="line">        &#123;</div><div class="line">            <span class="comment">//重启</span></div><div class="line">            tmrBeat.Stop();</div><div class="line">            WindowsController.ExitWindows(RestartOptions.Reboot, <span class="literal">true</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">FrmMain</span>(<span class="params"></span>)</span></div><div class="line">    &#123;</div><div class="line">        InitializeComponent();</div><div class="line">        regEudemon = <span class="keyword">new</span> RegistryEudemon();</div><div class="line">        tmrBeat = <span class="keyword">new</span> System.Timers.Timer(<span class="number">1000</span>);</div><div class="line">        tmrBeat.Elapsed += <span class="keyword">new</span> System.Timers.ElapsedEventHandler(tmrBeat_Elapsed);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -393,7 +383,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vue/" rel="tag"># Vue</a>
+            <a href="/tags/Method/" rel="tag"># Method</a>
           
         </div>
       
@@ -406,8 +396,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/24/gitlab中ssh-key的配置/" rel="next" title="gitlab中ssh key的配置">
-                <i class="fa fa-chevron-left"></i> gitlab中ssh key的配置
+              <a href="/LayoutInflater使用/" rel="next" title="LayoutInflater使用">
+                <i class="fa fa-chevron-left"></i> LayoutInflater使用
               </a>
             
           </div>
@@ -415,10 +405,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/03/书单/" rel="prev" title="书单">
-                书单 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -466,17 +452,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img/avatar.jpg"
@@ -558,22 +535,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue学习"><span class="nav-number">1.</span> <span class="nav-text">Vue学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用命令行创建项目"><span class="nav-number">1.1.</span> <span class="nav-text">使用命令行创建项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Metis的使用"><span class="nav-number">2.</span> <span class="nav-text">Metis的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
