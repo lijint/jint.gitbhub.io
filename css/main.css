@@ -998,9 +998,9 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 24px;
+  font-size: 500px;
   font-weight: normal;
-  font-family: 'Lobster Two', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Monda', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1677,7 +1677,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dd9912;
+  background: #52665c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2516,7 +2516,7 @@ hr {
 }
 .logo-line-before,
 .logo-line-after {
-  display: block;
+  display: none;
   overflow: hidden;
   margin: 0 auto;
   width: 75%;
