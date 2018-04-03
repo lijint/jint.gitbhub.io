@@ -119,7 +119,7 @@
 <meta property="og:site_name" content="Jint">
 <meta property="og:description" content="俗话说，工欲善其事，必先利其器，2018年给自己定的主要目标就是学习，那么首先就必须有做笔记的好习惯，所以要求自己先熟练的掌握做这个做笔记的工具，才能开始接下来的学习。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-02T03:02:06.285Z">
+<meta property="og:updated_time" content="2018-04-03T07:46:05.585Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo操作">
 <meta name="twitter:description" content="俗话说，工欲善其事，必先利其器，2018年给自己定的主要目标就是学习，那么首先就必须有做笔记的好习惯，所以要求自己先熟练的掌握做这个做笔记的工具，才能开始接下来的学习。">
@@ -374,6 +374,16 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add hexo repoName</div><div class="line">git pull hexo master</div></pre></td></tr></table></figure>
 </li>
 </ol>
+<h1 id="hexo上使用图片"><a href="#hexo上使用图片" class="headerlink" title="hexo上使用图片"></a>hexo上使用图片</h1><ol>
+<li>把主页配置文件<code>_config.yml</code>里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></li>
+<li>在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自<a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="external">dalao</a></li>
+<li>等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹</li>
+<li>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<code>![你想输入的替代文字](xxxx/图片名.jpg)</code><br>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</li>
+<li>最后检查一下，<code>hexo g</code>生成页面后，进入<code>public\2017\02\26\index.html</code>文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</li>
+</ol>
+<blockquote>
+<p>ps.添加以上功能，我应该是参考一位小姐姐的博客，为什么这样说呢，因为她的博客充满了表情包，试想，一个男生应该不会这么可爱的吧。<a href="https://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="external">小姐姐博客</a></p>
+</blockquote>
 <p>附：<a href="https://www.jianshu.com/p/f4cc5866946b" target="_blank" rel="external">在另一台电脑上搭建Hexo环境</a></p>
 
       
@@ -579,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#掌握Markdown语法"><span class="nav-number">1.</span> <span class="nav-text">掌握Markdown语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#掌握Markdown语法"><span class="nav-number">1.</span> <span class="nav-text">掌握Markdown语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo上使用图片"><span class="nav-number">3.</span> <span class="nav-text">hexo上使用图片</span></a></li></ol></div>
             
 
           </div>
