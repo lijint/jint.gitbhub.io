@@ -119,10 +119,14 @@
 <meta property="og:site_name" content="Jint">
 <meta property="og:description" content="俗话说，工欲善其事，必先利其器，2018年给自己定的主要目标就是学习，那么首先就必须有做笔记的好习惯，所以要求自己先熟练的掌握做这个做笔记的工具，才能开始接下来的学习。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-03T07:46:05.585Z">
+<meta property="og:image" content="http://yoursite.com/hexo操作/likethis.png">
+<meta property="og:image" content="http://yoursite.com/hexo操作/likethis1.png">
+<meta property="og:image" content="http://yoursite.com/hexo操作/likethis2.png">
+<meta property="og:updated_time" content="2018-04-03T08:08:49.648Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo操作">
 <meta name="twitter:description" content="俗话说，工欲善其事，必先利其器，2018年给自己定的主要目标就是学习，那么首先就必须有做笔记的好习惯，所以要求自己先熟练的掌握做这个做笔记的工具，才能开始接下来的学习。">
+<meta name="twitter:image" content="http://yoursite.com/hexo操作/likethis.png">
 
 
 
@@ -290,7 +294,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jint">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/img/avatar.jpg">
+      <meta itemprop="image" content="/img/mydog.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -378,7 +382,7 @@
 <li>把主页配置文件<code>_config.yml</code>里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></li>
 <li>在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自<a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="external">dalao</a></li>
 <li>等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹</li>
-<li>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<code>![你想输入的替代文字](xxxx/图片名.jpg)</code><br>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</li>
+<li>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<code>![你想输入的替代文字](xxxx/图片名.jpg)</code><br>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。<br><img src="/hexo操作/likethis.png" alt="like this"> <img src="/hexo操作/likethis1.png" alt="like this1"> <img src="/hexo操作/likethis2.png" alt="like this2"></li>
 <li>最后检查一下，<code>hexo g</code>生成页面后，进入<code>public\2017\02\26\index.html</code>文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</li>
 </ol>
 <blockquote>
@@ -500,7 +504,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/img/avatar.jpg"
+               src="/img/mydog.jpg"
                alt="Jint" />
           <p class="site-author-name" itemprop="name">Jint</p>
            
